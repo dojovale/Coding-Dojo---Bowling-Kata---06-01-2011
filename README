@@ -1,0 +1,12 @@
+Este repositório contém os arquivos utilizados para realização do Bowling Game Kata na Imagem em 06/11/2011
+
+Os arquivos estão dispostos no repositório respeitando a seguinte estrutura
+
+	+
+	|
+	|--presentation -> arquivos utilizados na apresentação do dojo
+	|
+	|--lib -> Bibliotecas adicionais utilizadas na demonstração (e.g. NuPack, Nunit, SpecFlow, etc)
+	|
+	|--src -> Código fonte gerado durante demonstração
+	
