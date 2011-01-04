@@ -149,6 +149,23 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("All Fives Game")]
+        public virtual void AllFivesGame()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("All Fives Game", ((string[])(null)));
+#line 37
+this.ScenarioSetup(scenarioInfo);
+#line 38
+ testRunner.Given("a new bowling game");
+#line 39
+ testRunner.When("I throw 5 pins in 21 consecutive rolls");
+#line 40
+ testRunner.Then("the score should be 150");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
     }
 }
 #endregion

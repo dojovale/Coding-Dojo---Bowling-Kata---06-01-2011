@@ -8,7 +8,7 @@ namespace Bowling.Tests
         private Game game;
 
         [SetUp]
-        private void Setup()
+        public void Setup()
         {
             game = new Game();
         }

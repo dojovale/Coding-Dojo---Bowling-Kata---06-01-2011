@@ -33,3 +33,9 @@ Scenario: Perfect Game
 	Given a new bowling game	
 	When I do 12 consecutive strikes	
 	Then the score should be 300
+
+Scenario: All Fives Game
+	Given a new bowling game	
+	When I throw 5 pins in 21 consecutive rolls	
+	Then the score should be 150
+
