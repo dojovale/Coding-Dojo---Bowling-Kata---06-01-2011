@@ -37,5 +37,15 @@ Scenario: Perfect Game
 Scenario: All Fives Game
 	Given a new bowling game	
 	When I throw 5 pins in 21 consecutive rolls	
-	Then the score should be 150
+	Then the score should be 151
 
+Scenario: Dutch 200
+	Given a new bowling game	
+	When I do 10 spares and strikes in alternate rolls
+	And I do a strike	
+	Then the score should be 200
+
+Scenario: All twos
+	Given a new bowling game	
+	When I do 20 rolls and hit 2 pins per roll	
+	Then the score should be 40

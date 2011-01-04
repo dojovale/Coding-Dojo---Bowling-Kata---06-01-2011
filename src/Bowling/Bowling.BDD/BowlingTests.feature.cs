@@ -162,7 +162,43 @@ this.ScenarioSetup(scenarioInfo);
 #line 39
  testRunner.When("I throw 5 pins in 21 consecutive rolls");
 #line 40
- testRunner.Then("the score should be 150");
+ testRunner.Then("the score should be 151");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Dutch 200")]
+        public virtual void Dutch200()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dutch 200", ((string[])(null)));
+#line 42
+this.ScenarioSetup(scenarioInfo);
+#line 43
+ testRunner.Given("a new bowling game");
+#line 44
+ testRunner.When("I do 10 spares and strikes in alternate rolls");
+#line 45
+ testRunner.And("I do a strike");
+#line 46
+ testRunner.Then("the score should be 200");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("All twos")]
+        public virtual void AllTwos()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("All twos", ((string[])(null)));
+#line 48
+this.ScenarioSetup(scenarioInfo);
+#line 49
+ testRunner.Given("a new bowling game");
+#line 50
+ testRunner.When("I do 20 rolls and hit 2 pins per roll");
+#line 51
+ testRunner.Then("the score should be 40");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

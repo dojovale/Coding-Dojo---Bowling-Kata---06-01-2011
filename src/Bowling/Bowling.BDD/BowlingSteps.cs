@@ -20,6 +20,34 @@ namespace Bowling.BDD
             DoRolls(20, 0);
         }
 
+        [When(@"I do 10 spares and strikes in alternate rolls")]
+        public void WhenIDo10SparesAndStrikesInAlternateRolls()
+        {
+            for(int i=0; i<10; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    DoSpare();
+                }
+                else
+                {
+                    DoStrike();
+                }
+            }
+        }
+
+        [When(@"I do 20 rolls and hit 2 pins per roll")]
+        public void WhenIDo20RollsAndHit2PinsPerRoll()
+        {
+            DoRolls(20, 2);
+        }
+
+        [When(@"I do a strike")]
+        public void WhenIDoAStrike()
+        {
+            DoStrike();
+        }
+
 
         [When(@"I do a strike in the first frame")]
         public void WhenIDoAStrikeInTheFirstFrame()
